@@ -1,14 +1,14 @@
 package model;
 
-public class NoBall extends Extra {
+public class LegByes extends Extra {
 
-	private static final String LABEL = "nb";
+	private static final String LABEL = "lb";
 	
-	public NoBall(int id, int overId, int number) {
+	public LegByes(int id, int overId, int number) {
 		super(id, overId, number, false, MIN_RUNS, 0);
 	}
 	
-	public NoBall(int id, int overId, int number, boolean countable, boolean hasRuns, int runs, String description, String strikerId,
+	public LegByes(int id, int overId, int number, boolean countable, boolean hasRuns, int runs, String description, String strikerId,
 			String nonStrikerId, int atTotalRuns) {
 		super(id, overId, number, false, runs, description, strikerId, nonStrikerId, atTotalRuns);
 	}

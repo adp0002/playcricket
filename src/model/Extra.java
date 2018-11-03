@@ -51,10 +51,8 @@ public abstract class Extra extends Ball {
 			labelSymbol = DEFAULT_LABEL;
 		}
 		
-		int defRuns = getDefaultRuns(); 
-		
 		String label = labelSymbol;
-		label += hasDefaultRuns && defRuns > 0 ? getDefaultRuns()  : "";    // E or E1 
+		label += hasDefaultRuns && getDefaultRuns() > 0 ? getDefaultRuns()  : "";    // E or E1 
 		label += getRuns() == 0 ? "" : "+" + getRuns(); // E+4 or E1+4 
 		return label;
 	}

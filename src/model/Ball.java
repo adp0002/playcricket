@@ -48,8 +48,16 @@ public class Ball {
 		return new WideBall(id, overId, number, hasDefualtRuns);
 	}
 	
-	public static Ball noBall(int id, int overId, int number, boolean hasDefualtRuns) {
-		return new NoBall(id, overId, number, hasDefualtRuns);
+	public static Ball noBall(int id, int overId, int number) {
+		return new NoBall(id, overId, number);
+	}
+	
+	public static Ball byes(int id, int overId, int number) {
+		return new Byes(id, overId, number);
+	}
+	
+	public static Ball legByes(int id, int overId, int number) {
+		return new LegByes(id, overId, number);
 	}
 	
 	public Ball(int id, int overId, int number, int runs) {
