@@ -7,22 +7,22 @@ package model;
  *
  */
 public class Wicket extends Ball {
-	
+	private String playerId;
 	private int atTotalRuns;
 	
 	private static final String LABEL = "w";
 	
-	public Wicket(int id, int overId, int number) {
-		super(id, overId, number, MIN_RUNS);
-	}
-	
-	public Wicket(int id, int overId, int number, int runs, String description, String strikerId, String nonStrikerId,
-			int atTotalRuns) {
-		super(id, overId, number, true, runs, description, strikerId, nonStrikerId);
-
+	public Wicket(int id, int overId, int number, int runs, String playerId, int atTotalRuns) {
+		super(id, overId, number, runs);
+		
+		this.playerId = playerId;
 		this.atTotalRuns = atTotalRuns;
 	}
 
+	public String getPlayerId() {
+		return playerId;
+	}
+	
 	public int getAtTotalRuns() {
 		return atTotalRuns;
 	}

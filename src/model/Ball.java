@@ -40,8 +40,8 @@ public class Ball {
 		return new Ball(id, overId, number, 6);
 	}
 	
-	public static Ball wicket(int id, int overId, int number) {
-		return new Wicket(id, overId, number);
+	public static Ball wicket(int id, int overId, int number, int runs, String playerId, int atTotalRuns) {
+		return new Wicket(id, overId, number, runs, playerId, atTotalRuns);
 	}
 	
 	public static Ball wideBall(int id, int overId, int number, boolean hasDefualtRuns) {
